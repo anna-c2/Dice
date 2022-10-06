@@ -17,12 +17,11 @@ void setup()
   {
       size(670,670);
       noLoop();
-     // dice1 = new Die(10,10);
+      background(0);
   }
   void draw()
   {
-      //your code here
-      background(0);
+      //your code here    
       int start;
       int num = (int)((Math.random()*3)+3);
       for(int j = 0; j < num; j++){
