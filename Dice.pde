@@ -107,52 +107,55 @@ void setup()
           }
           if(dots==1){
             oneDot();
-            /*totalDots=totalDots+1;
+            totalDots=totalDots+1;
             if(pinkDot == true){
               pinkDotSum+=1;  
-            }*/
+            }
           }
           else if (dots==2){
             twoDots();
-           /* totalDots=totalDots+2;
+            totalDots=totalDots+2;
             if(pinkDot == true){
               pinkDotSum+=2;
-              }*/
+              }
           }
           else if(dots==3){
             oneDot();
             twoDots();
-           /* totalDots=totalDots+3;
+            totalDots=totalDots+3;
             if(pinkDot == true){
               pinkDotSum+=3;
-              }*/
+              }
           }
           else if(dots==4){
             cornerDots();
             twoDots();
-           /* totalDots=totalDots+4;
+            totalDots=totalDots+4;
             if(pinkDot == true){
               pinkDotSum+=4;
-              }*/
+              }
           }
           else if(dots==5){
             oneDot();
             twoDots();
             cornerDots();
-           /* totalDots=totalDots+5;
+            totalDots=totalDots+5;
             if(pinkDot == true){
               pinkDotSum+=5;
-            }*/
+            }
           }
           else if(dots==6){
             twoDots();
             cornerDots();
             ellipse(myX+20,myY+45,dotSize,dotSize);
             ellipse(myX+70,myY+45,dotSize,dotSize);
-           /* totalDots=totalDots+6;
+            totalDots=totalDots+6;
             if(pinkDot == true){
               pinkDotSum+=6;
-            }*/
+            }
+          }
+          else{
+            ellipse(0,0);
           }
                    
       }
@@ -170,7 +173,7 @@ void setup()
       }
      
   }
-  /*void totalDotsSum(){
+  void totalDotsSum(){
          System.out.println(totalDots);
           println(pinkDotSum);
          
@@ -186,6 +189,6 @@ void setup()
           text(pinkMsg, 200, 620);
           text(blackMsg, 200, 640);
          
-      }*/
+      }
  
   
