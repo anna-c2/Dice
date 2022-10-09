@@ -16,21 +16,41 @@ int pinkDotSum;
 void setup()
   {
       size(670,670);
-      noLoop();
+      //noLoop();
       background(0);
   }
   void draw()
   {
       //your code here    
-      
+      int start;
+      int num = (int)((Math.random()*3)+3);
+      for(int j = 0; j < num; j++){
+        for(int i = 0; i < num; i++){
+           
+          if(i==0){
+            if(shift==false){
+                start = 0;
+                shift = true;                
+              }
+             else{
+                start = 55;
+                shift = false;
+              }
+          }
+          else{
+            if(shift==true)
+              start = i*110;
+            else
+              start = (i*110)+55;
+          }
                      
-            bob = new Die(100,100);
+            bob = new Die(start,j*110);
             bob.roll();
             bob.show();
            
-        
+        }
       }
-      //totalDotsSum();
+      totalDotsSum();
      
   }
   void mousePressed()
@@ -54,12 +74,12 @@ void setup()
       void roll()
       {
           //your code here
-          dots = 4;                    
+          dots = (int)(Math.random()*6+1);                    
       }
       void show()
       {
           //your code here
-          /*int ranNum = (int)(Math.random()*10);
+          int ranNum = (int)(Math.random()*10);
           if(ranNum >= 5){
             pinkDot = true;
             pinkBg = false;
@@ -74,17 +94,17 @@ void setup()
             fill(#FA79BA);
           }else{
             fill(0);
-          }*/
+          }
           stroke(255);
           strokeWeight(2);
           square(myX, myY, dieSize);  
          
-          /*noStroke();
+          noStroke();
           if(pinkDot == true){
             fill(#FA79BA);
           }else{
             fill(0);
-          }*/
+          }
           if(dots==1){
             oneDot();
             totalDots=totalDots+1;
@@ -133,9 +153,6 @@ void setup()
             if(pinkDot == true){
               pinkDotSum+=6;
             }
-          }
-          else{
-            ellipse(0,0);
           }
                    
       }
