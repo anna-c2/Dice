@@ -16,7 +16,7 @@ int pinkDotSum;
 void setup()
   {
       size(670,670);
-      noLoop();
+      //noLoop();
       background(0);
   }
   void draw()
