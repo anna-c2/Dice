@@ -16,8 +16,7 @@ int pinkDotSum;
 void setup()
   {
       size(670,670);
-      noLoop();
-     // dice1 = new Die(10,10);
+      noLoop();     
   }
   void draw()
   {
@@ -51,6 +50,7 @@ void setup()
            
         }
       }
+      
       totalDotsSum();
      
   }
@@ -166,8 +166,8 @@ void setup()
      
   }
   void totalDotsSum(){
-         System.out.println(totalDots);
-          println(pinkDotSum);
+         //System.out.println(totalDots);
+          //println(pinkDotSum);
          
           message = "Total Number of Dots: " + totalDots;
           pinkMsg = "Number of Pink Dots: " + pinkDotSum;
