@@ -17,7 +17,6 @@ void setup()
   {
       size(670,670);
       noLoop();
-     // dice1 = new Die(10,10);
   }
   void draw()
   {
@@ -98,7 +97,7 @@ void setup()
           }
           stroke(255);
           strokeWeight(2);
-          square(myX, myY, dieSize);  
+          rect(myX, myY, dieSize, dieSize);  
          
           noStroke();
           if(pinkDot == true){
