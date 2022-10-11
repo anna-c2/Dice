@@ -17,6 +17,7 @@ void setup()
   {
       size(670,670);
       noLoop();
+     // dice1 = new Die(10,10);
   }
   void draw()
   {
